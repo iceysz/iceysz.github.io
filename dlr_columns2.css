@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 6
+   Review Assignment
+
+   Columns Style Sheet
+   Author: Josh Baltzer
+   Date:   2021-7-15
+
+   Filename:         dlr_columns2.css
+
+*/
+
+
+
+/* Column Styles */
+p {
+    column-count: 3;
+    column-gap: 20px;
+    column-rule: 1px solid black;
+}
+
