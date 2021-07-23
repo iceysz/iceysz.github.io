@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+    <title>Doggos R Poggos</title>
+<meta charset="utf-8">
+<link href="doggosrpoggos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <h1><a class="homepage" href="doggosrpoggos.html">Doggos R Poggos</a></h1>
+    <nav>
+        <ul>
+            <li><a id="navOutline" href="doggosrpoggos.html">Home</a></li>
+            <li><a id="navOutline" href="listings.html">Listings</a></li>
+            <li><a id="navOutline" href="buy.html">Purchase</a></li>
+            <li><a id="navOutline" href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <form>
+      <fieldset id="billing">
+      <legend>Billing Information (required)</legend>
+				<label for="firstBox">First Name</label>
+				<input type="text" name="fName" id="firstBox"/>
+				<label for="lastBox">Last Name</label>
+				<input type="text" name="lName" id="lastBox"/>
+				<label for="streetBox">Street Address</label>
+                <input type="text" name="street" id="streetBox"/>
+                <label for="emailBox">Email</label>
+				<input type="text" name="Email" id="emailBox"/>
+      <fieldset id="creditCard">
+        <legend>Credit Card (required)</legend>
+        <fieldset>
+            <label class="cardLabel" >
+                <input type="radio" name="cCard" value="amex" required />
+                <img src="images/amex.png" alt="amex">
+            </label>
+            <label class="cardLabel" >
+                <input type="radio" name="cCard" value="discover" required />
+                <img src="images/discover.png" alt="discover">
+            </label>
+            <label class="cardLabel" >
+                <input type="radio" name="cCard" value="master" required />
+                <img src="images/master.png" alt="master" >
+            </label>
+            <label class="cardLabel" >
+                <input type="radio" name="cCard" value="visa" required />
+                <img src="images/visa.png" alt="visa" >
+            </label>
+    </fieldset>
+        
+        <label for="cardBox">Credit Card Number</label>
+        <input type="text" name="cardNumber" id="cardBox" required value="6011123456789019"
+        pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"/>
+        <label for="monthList">Expiration Date</label>
+        <select id="monthList" required>
+    <option value="">--Month--</option>
+    <option value="1">January</option>
+    <option value="2">February</option>
+    <option value="3">March</option>
+    <option value="4">April</option>
+    <option value="5">May </option>
+    <option value="6">June</option>
+    <option value="7">July </option>
+    <option value="8">August</option>
+    <option value="9">September</option>
+    <option value="10">October</option>
+    <option value="11">November </option>
+    <option value="12">December</option>
+</select>
+<select id="yearList" required>
+<option value="">--Year--</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024 </option>
+<option value="2025">2025 </option>
+</select>
+<label for="cscBox" >CSC</label>
+<input type="text" name="csc" id="cscBox" pattern="^\d{3}$" maxlength="3" placeholder="nnn" required />	
+</fieldset>
+</form>
+    
+<a href='thankyou.html'><button>Purchase!</button></a>
+</body>
